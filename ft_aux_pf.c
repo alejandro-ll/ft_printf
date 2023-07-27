@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_aux_pf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: allera-m <allera-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 20:57:47 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/28 20:57:47 by marvin           ###   ########.fr       */
+/*   Updated: 2023/05/11 11:26:34 by allera-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
 
 size_t	ft_strlen_pf(const char *str)
 {
@@ -64,11 +63,10 @@ static size_t	ft_len(unsigned long long n, char *base)
 	return (len);
 }
 
-
 char	*ft_aux_pf(unsigned long long n, char *base)
 {
 	char	*str;
-	int     n_len;
+	int		n_len;
 	int		b_len;
 
 	n_len = ft_len(n, base);
